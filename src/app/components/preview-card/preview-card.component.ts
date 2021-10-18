@@ -7,5 +7,5 @@ import { Character } from 'src/app/models/character.model';
   styleUrls: ['./preview-card.component.scss'],
 })
 export class PreviewCardComponent {
-  @Input() character: Character | undefined;
+  @Input() character?: Character;
 }

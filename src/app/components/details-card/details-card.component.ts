@@ -7,5 +7,5 @@ import { Character } from 'src/app/models/character.model';
   styleUrls: ['./details-card.component.scss'],
 })
 export class DetailsCardComponent {
-  @Input() character: Character | undefined;
+  @Input() character?: Character;
 }

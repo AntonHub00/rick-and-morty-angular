@@ -1,11 +1,11 @@
 export class Character {
-  id: number | undefined;
-  name: string | undefined;
-  status: string | undefined;
-  species: string | undefined;
-  type: string | undefined;
-  gender: string | undefined;
-  image: string | undefined;
-  origin: { name: string } | undefined;
-  location: { name: string } | undefined;
+  id?: number;
+  name?: string;
+  status?: string;
+  species?: string;
+  type?: string;
+  gender?: string;
+  image?: string;
+  origin?: { name: string };
+  location?: { name: string };
 }
