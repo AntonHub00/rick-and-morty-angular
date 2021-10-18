@@ -11,14 +11,14 @@ Install the dependencies:
 npm install
 ```
 
-Start the development server (locahost on port 4200 by default. It may vary):
+Start the development server (localhost on port 4200 by default. It may vary):
 
 ```bash
 npm start
 ```
 
-No aditional configuration needed (e.g. API keys)
+No additional configuration needed (e.g. API keys).
 
 ## Styles
 
-For styling was used Tailwind CSS with SASS (scss)
+For styling was used Tailwind CSS with SASS (scss).
