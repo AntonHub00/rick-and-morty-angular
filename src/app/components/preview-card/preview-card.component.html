@@ -10,16 +10,16 @@
 >
   <div
     [style.background-image]="
-      character.image
-        ? 'url(' + character.image + ')'
+      character?.image
+        ? 'url(' + character?.image + ')'
         : 'url(assets/images/notFound.jpg)'
     "
     class="h-80 bg-cover bg-center"
   ></div>
   <div class="mx-6 my-4">
     <div class="font-bold text-xl text-gray-600">
-      {{ character.name || "No name" }}
+      {{ character?.name || "No name" }}
     </div>
-    <p class="mt-2 text-gray-500">{{ character.status || "No status" }}</p>
+    <p class="mt-2 text-gray-500">{{ character?.status || "No status" }}</p>
   </div>
 </div>

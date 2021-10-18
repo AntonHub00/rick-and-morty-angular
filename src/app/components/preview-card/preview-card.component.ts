@@ -7,11 +7,7 @@ import { Character } from 'src/app/models/character.model';
   styleUrls: ['./preview-card.component.scss'],
 })
 export class PreviewCardComponent implements OnInit {
-  @Input('character') character: Character = new Character();
+  @Input('character') character: Character | undefined;
 
-  ngOnInit(): void {
-    this.character.name = 'Test name';
-    this.character.status = 'Test status';
-    this.character.image = 'https://via.placeholder.com/300';
-  }
+  ngOnInit(): void {}
 }
