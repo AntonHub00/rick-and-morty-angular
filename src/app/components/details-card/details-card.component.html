@@ -1,0 +1,59 @@
+<div
+  class="
+    rounded-md
+    border border-gray-300
+    bg-white
+    overflow-hidden
+    shadow-lg
+    max-w-lg
+    mx-auto
+  "
+>
+  <img
+    [src]="character?.image || 'assets/images/notFound.jpg'"
+    class="w-full sm:w-auto sm:my-5 sm:mx-auto"
+  />
+  <div class="mx-6 my-4">
+    <div class="font-bold text-xl text-gray-600 text-center my-5">
+      {{ character?.name || "No name" }}
+    </div>
+    <div class="flex-col text-center">
+      <div class="my-2">
+        Status:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.status || "No status"
+        }}</span>
+      </div>
+      <div class="my-2">
+        Species:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.species || "No species"
+        }}</span>
+      </div>
+      <div class="my-2">
+        Type:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.type || "No type"
+        }}</span>
+      </div>
+      <div class="my-2">
+        Gender:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.gender || "No gender"
+        }}</span>
+      </div>
+      <div class="my-2">
+        Origin:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.origin?.name || "No origin"
+        }}</span>
+      </div>
+      <div class="my-2">
+        Last known location:
+        <span class="mt-2 text-gray-500 inline">{{
+          character?.location?.name || "No last known location"
+        }}</span>
+      </div>
+    </div>
+  </div>
+</div>
