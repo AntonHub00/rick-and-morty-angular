@@ -9,6 +9,7 @@ import { DetailsCardComponent } from './components/details-card/details-card.com
 import { CharacterDetailsComponent } from './views/character-details/character-details.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NullishValidatorPipe } from './pipes/nullish-validator.pipe';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NullishValidatorPipe } from './pipes/nullish-validator.pipe';
     DetailsCardComponent,
     CharacterDetailsComponent,
     NullishValidatorPipe,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
