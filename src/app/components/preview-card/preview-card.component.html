@@ -8,14 +8,10 @@
     shadow-lg
   "
 >
-  <div
-    [style.background-image]="
-      character?.image
-        ? 'url(' + character?.image + ')'
-        : 'url(assets/images/notFound.jpg)'
-    "
-    class="h-80 bg-cover bg-center"
-  ></div>
+  <img
+    [src]="character?.name || 'assets/images/notFound.jpg'"
+    class="max-h-80 w-auto"
+  />
   <div class="mx-6 my-4">
     <div class="font-bold text-xl text-gray-600">
       {{ character?.name || "No name" }}
