@@ -6,16 +6,32 @@
     overflow-hidden
     max-w-xs
     shadow-lg
+    relative
   "
 >
   <img
     [src]="character?.name || 'assets/images/notFound.jpg'"
     class="max-h-80 w-auto"
   />
-  <div class="mx-6 my-4">
-    <div class="font-bold text-xl text-gray-600">
-      {{ character?.name || "No name" }}
-    </div>
-    <p class="mt-2 text-gray-500">{{ character?.status || "No status" }}</p>
+  <div
+    class="
+      w-full
+      h-full
+      p-5
+      text-white text-3xl text-center
+      bg-black
+      opacity-0
+      absolute
+      top-0
+      flex
+      justify-center
+      items-center
+      cursor-pointer
+      transform
+      hover:opacity-80
+      duration-300
+    "
+  >
+    <span>{{ character?.name || "No name" }}</span>
   </div>
 </div>
