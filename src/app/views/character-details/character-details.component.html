@@ -1,8 +1,9 @@
 <div class="min-h-screen flex items-center justify-center">
   <button
     class="bg-blue-500 text-white rounded-sm py-1 px-4 absolute left-5 top-5"
+    (click)="goBack()"
   >
     Back
   </button>
-  <app-details-card></app-details-card>
+  <app-details-card [character]="character"></app-details-card>
 </div>

@@ -7,6 +7,7 @@ import { MainComponent } from './views/main/main.component';
 import { PreviewCardComponent } from './components/preview-card/preview-card.component';
 import { DetailsCardComponent } from './components/details-card/details-card.component';
 import { CharacterDetailsComponent } from './views/character-details/character-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { CharacterDetailsComponent } from './views/character-details/character-d
     DetailsCardComponent,
     CharacterDetailsComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
