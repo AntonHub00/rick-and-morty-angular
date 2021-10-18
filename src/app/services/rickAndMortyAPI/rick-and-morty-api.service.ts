@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { rickAndMortyApiCall } from 'src/app/models/rickAndMortyApiCall.model';
+import { IRickAndMortyApiCall } from 'src/app/models/rickAndMortyApiCall.model';
 import { ICharacter } from 'src/app/models/ICharacter.model';
 
 @Injectable({
@@ -17,7 +17,7 @@ export class RickAndMortyAPIService {
 
   public getAllCharacters(): Observable<ICharacter[]> {
     return this.httpClient
-      .get<rickAndMortyApiCall>(`${this.baseURL}${this.charactersEndpoint}`)
+      .get<IRickAndMortyApiCall>(`${this.baseURL}${this.charactersEndpoint}`)
       .pipe(
         map((response) => {
           return response.results ?? [];
