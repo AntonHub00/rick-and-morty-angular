@@ -11,7 +11,7 @@
   "
 >
   <img
-    [src]="character?.image || 'assets/images/notFound.jpg'"
+    [src]="character?.image | nullishValidator: 'assets/images/notFound.jpg'"
     class="max-h-80 w-auto"
   />
   <div
@@ -33,6 +33,6 @@
       duration-300
     "
   >
-    <span>{{ character?.name || "No name" }}</span>
+    <span>{{ character?.name | nullishValidator: "No name" }}</span>
   </div>
 </div>

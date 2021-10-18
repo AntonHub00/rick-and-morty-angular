@@ -8,6 +8,7 @@ import { PreviewCardComponent } from './components/preview-card/preview-card.com
 import { DetailsCardComponent } from './components/details-card/details-card.component';
 import { CharacterDetailsComponent } from './views/character-details/character-details.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NullishValidatorPipe } from './pipes/nullish-validator.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     PreviewCardComponent,
     DetailsCardComponent,
     CharacterDetailsComponent,
+    NullishValidatorPipe,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],

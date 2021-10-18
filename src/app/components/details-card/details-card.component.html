@@ -10,48 +10,48 @@
   "
 >
   <img
-    [src]="character?.image || 'assets/images/notFound.jpg'"
+    [src]="character?.image | nullishValidator: 'assets/images/notFound.jpg'"
     class="w-full sm:w-auto sm:my-5 sm:mx-auto"
   />
   <div class="mx-6 my-4">
     <div class="font-bold text-xl text-gray-600 text-center my-5">
-      {{ character?.name || "No name" }}
+      {{ character?.name | nullishValidator: "No name" }}
     </div>
     <div class="flex-col text-center">
       <div class="my-2">
         Status:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.status || "No status"
+          character?.status | nullishValidator
         }}</span>
       </div>
       <div class="my-2">
         Species:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.species || "No species"
+          character?.species | nullishValidator
         }}</span>
       </div>
       <div class="my-2">
         Type:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.type || "No type"
+          character?.type | nullishValidator
         }}</span>
       </div>
       <div class="my-2">
         Gender:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.gender || "No gender"
+          character?.gender | nullishValidator
         }}</span>
       </div>
       <div class="my-2">
         Origin:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.origin?.name || "No origin"
+          character?.origin?.name | nullishValidator
         }}</span>
       </div>
       <div class="my-2">
         Last known location:
         <span class="mt-2 text-gray-500 inline">{{
-          character?.location?.name || "No last known location"
+          character?.location?.name | nullishValidator
         }}</span>
       </div>
     </div>
