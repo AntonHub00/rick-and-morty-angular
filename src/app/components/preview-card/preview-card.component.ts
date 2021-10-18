@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Character } from 'src/app/models/character.model';
+import { ICharacter } from 'src/app/models/ICharacter.model';
 
 @Component({
   selector: 'app-preview-card',
@@ -7,5 +7,5 @@ import { Character } from 'src/app/models/character.model';
   styleUrls: ['./preview-card.component.scss'],
 })
 export class PreviewCardComponent {
-  @Input() character?: Character;
+  @Input() character?: ICharacter;
 }

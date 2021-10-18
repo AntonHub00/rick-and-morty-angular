@@ -1,5 +1,5 @@
-import { Character } from './character.model';
+import { ICharacter } from './ICharacter.model';
 
 export class rickAndMortyApiCall {
-  results?: Character[];
+  results?: ICharacter[];
 }
