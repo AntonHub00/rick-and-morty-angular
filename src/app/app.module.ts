@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './views/main/main.component';
@@ -13,12 +14,10 @@ import { CharacterDetailsComponent } from './views/character-details/character-d
     MainComponent,
     PreviewCardComponent,
     DetailsCardComponent,
-    CharacterDetailsComponent
+    CharacterDetailsComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
