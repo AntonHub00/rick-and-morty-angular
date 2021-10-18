@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Character } from 'src/app/models/character.model';
 
 @Component({
@@ -6,8 +6,6 @@ import { Character } from 'src/app/models/character.model';
   templateUrl: './preview-card.component.html',
   styleUrls: ['./preview-card.component.scss'],
 })
-export class PreviewCardComponent implements OnInit {
-  @Input('character') character: Character | undefined;
-
-  ngOnInit(): void {}
+export class PreviewCardComponent {
+  @Input() character: Character | undefined;
 }
