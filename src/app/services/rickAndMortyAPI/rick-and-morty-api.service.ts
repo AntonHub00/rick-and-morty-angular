@@ -20,7 +20,7 @@ export class RickAndMortyAPIService {
       .get<IRickAndMortyApiCall>(`${this.baseURL}${this.charactersEndpoint}`)
       .pipe(
         map((response) => {
-          return response.results ?? [];
+          return response.results;
         })
       );
   }
